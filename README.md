@@ -1,1 +1,1 @@
-# A_Star-algorithm-
+# A* algorithm

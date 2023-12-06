@@ -1,0 +1,6 @@
+<table class="node-grid" *ngIf = "nodeGrid && nodeGrid.length">
+    <tr *ngFor="let row of nodeGrid">
+      <td *ngFor="let node of row" id="{{node.id}}" 
+      class="grid-item {{ node.isPath ? 'path-node' : '' }} {{ node.isStart ? 'start-node' : '' }} {{ node.isEnd ? 'end-node' : '' }}"  (click)="selectNode(node)"></td>
+    </tr>
+</table>
